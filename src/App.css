@@ -1,3 +1,13 @@
+:root {
+  --primary: #8C22D6;
+  --pdark: #431066;
+  --pdarker: #3C0E5B;
+  --pdarkerest: #2F0C48;
+  --plight: #b277dd;
+  --secondary: #69E41B;
+  --sdark: #53B515;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +45,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--plight);
+}
+
+#drum-machine {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+}
+
+#keypad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--pdarker);
+  min-width: 190px;
+  width: 190px;
+  height: 190px;
+}
+
+.drum-pad {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: large;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+}
+
+#display-panel {
+  border: 3px solid var(--pdarker);
+  background-color: var(--pdark);
+  
+  width: 100%;
+}
+
+#display {
+  border: 3px solid var(--pdarker);
+  background-color: var(--plight);
+  color: var(--pdarkerest);
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
 }
